@@ -1,0 +1,240 @@
+.background-container {
+    position: fixed;
+    top: 13%;
+    left: 8%;
+    width: 85%;
+    height: 80%;
+    background-image: url('../../assets/icon/logo_banco_de_leche.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  .image-container {
+    position: relative;  /* Permite usar posicionamiento absoluto en elementos internos, si es necesario */
+    text-align: center;  /* Centra la imagen horizontalmente */
+    margin-top: 20px;    /* Ajusta la separación desde la parte superior */
+  }
+  
+  /* Estilos para la imagen */
+  .custom-image {
+    width: 70px;        /* Ancho deseado */
+    height: auto;        /* Mantiene la proporción original */
+    /* Puedes agregar más estilos para posicionarla */
+    margin-left: 0px;
+    margin-top: 0px;   /* Ejemplo de margen lateral */
+  }
+  .custom-text{
+    font-size: 70px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial Black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 70px;
+    margin-left: -500px; /* Ajusta el margen superior según sea necesario */	
+  }
+  .custom-text1{
+    font-size: 30px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial ', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 70px;
+    margin-left: -700px; /* Ajusta el margen superior según sea necesario */	
+  }
+
+  .custom-form {
+    position: absolute;
+    top: 160px;
+    font-family: 'Arial Black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    left: 290px;
+    width: 600px;  /* Ajusta el ancho */
+    height: 120px; /* Ajusta el alto */
+    font-size: 40px; /* Ajusta el tamaño del texto */
+    
+  }
+  .custom-form1 {
+    position: absolute;
+    top: 160px;
+    font-family: 'Arial Black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    left: 90px;
+    width: 120px;  /* Ajusta el ancho */
+    height: 120px; /* Ajusta el alto */
+    font-size: 40px; /* Ajusta el tamaño del texto */
+    
+  }
+  .image-container {
+    position: relative;  /* Permite usar posicionamiento absoluto en elementos internos, si es necesario */
+    text-align: center;  /* Centra la imagen horizontalmente */
+    margin-top: 20px;    /* Ajusta la separación desde la parte superior */
+  }
+  
+  /* Estilos para la imagen */
+  .custom-image1 {
+    width: 70px;        /* Ancho deseado */
+    height: auto;        /* Mantiene la proporción original */
+    /* Puedes agregar más estilos para posicionarla */
+    margin-left: 925px;
+    margin-top: -80px;  /* Ejemplo de margen lateral */
+  }
+  .custom-text2{
+    font-size: 30px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial ', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 60px;
+    margin-left: -700px; /* Ajusta el margen superior según sea necesario */	
+  }
+  .checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    column-gap: 300px; /* Aumenta el espacio entre columnas */
+    row-gap: 30px; /* Espaciado entre filas */
+    max-width: 600px; /* Ajusta el ancho máximo si es necesario */
+    margin-top: 40px;
+    margin-left: 200px;
+    font-size: 22px !important; /* Hace el texto más grande */
+    font-family: 'Mostserrat', sans-serif; /* Cambia el tipo de letra según sea necesario */
+
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  ::ng-deep .mat-checkbox .mat-checkbox-inner-container {
+    width: 30px !important; /* Ajusta el ancho del checkbox */
+    height: 30px !important; /* Ajusta la altura del checkbox */
+  }
+  
+  ::ng-deep .mat-checkbox-label {
+    font-size: 30px !important; /* Hace el texto más grande */
+    margin-left: 10px; /* Ajusta el margen entre el checkbox y el texto */
+  }
+  .checkbox-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    column-gap: 400px; /* Aumenta el espacio entre columnas */
+    row-gap: 20px; /* Espaciado entre filas */
+    max-width: 600px; /* Ajusta el ancho máximo si es necesario */
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: 20px !important; 
+  }
+  
+  .checkbox-item1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  ::ng-deep .mat-checkbox .mat-checkbox-inner-container {
+    width: 30px !important; /* Ajusta el ancho del checkbox */
+    height: 30px !important; /* Ajusta la altura del checkbox */
+  }
+  
+  ::ng-deep .mat-checkbox-label {
+    font-size: 30px !important; /* Hace el texto más grande */
+    margin-left: 10px; /* Ajusta el margen entre el checkbox y el texto */
+  }
+  .custom-text3{
+    font-size: 30px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 60px;
+   margin-left: -600px; /* Ajusta el margen superior según sea necesario */	
+  }
+
+  .custom-text4{
+    font-size: 25px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: -640px;
+    margin-left: 500px; /* Ajusta el margen superior según sea necesario */	
+  }
+  .radio-container1 {
+    position: absolute;
+    font-size: 25px;
+    top: 780px;   /* Ajusta la distancia desde la parte superior */ 
+    margin-left: 820px;
+    mat-radio-button {
+      transform: scale(1.0);  /* Aumenta el tamaño del botón */
+      margin-right: 120px;      /* Separa los botones entre sí */
+    }
+  }
+  .checkbox-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    column-gap: 400px; /* Aumenta el espacio entre columnas */
+    row-gap: 20px; /* Espaciado entre filas */
+    max-width: 600px; /* Ajusta el ancho máximo si es necesario */
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: 30px !important; 
+  }
+  
+  .checkbox-item2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  ::ng-deep .mat-checkbox .mat-checkbox-inner-container {
+    width: 30px !important; /* Ajusta el ancho del checkbox */
+    height: 30px !important; /* Ajusta la altura del checkbox */
+  }
+  
+  ::ng-deep .mat-checkbox-label {
+    font-size: 30px !important; /* Hace el texto más grande */
+    margin-left: 10px; /* Ajusta el margen entre el checkbox y el texto */
+  }
+  .custom-text5{
+    font-size: 25px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 650px;
+    margin-left: -300px; /* Ajusta el margen superior según sea necesario */	
+  }
+  .table-container {
+    width: 100%; /* Ancho de la tabla */
+    max-width: 700px; /* Ancho máximo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 20px auto; /* Centrar la tabla */
+    position: relative;
+    margin-top: 50px; /* Ajusta la posición vertical */
+    margin-left: 150px; /* Ajusta la posición horizontal */
+  }
+  
+  table {
+    width: 100%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Colapsar bordes */
+  }
+  
+  table, th, td {
+    border: 1px solid black; /* Bordes negros */
+  }
+  
+  th, td {
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+    font-size: 20px;
+  }
+  .custom-button {
+    background-color: #1900ff;
+    color: white;
+    width: 235px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin: 10px; /* Add some margin */
+    position: relative;
+    margin-top: 100px; /* Adjust the top position as needed */
+    left: 590px; /* Adjust the left position as needed */
+    font-size: 18px;
+    font-family: 'Arial Black',sans-serif;
+  } 
+  .custom-button1 {
+    background-color: #ff0000;
+    color: white;
+    width: 235px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin: 10px; /* Add some margin */
+    position: relative;
+    margin-top: 100px; /* Adjust the top position as needed */
+    left: -90px; /* Adjust the left position as needed */
+    font-size: 18px;
+    font-family: 'Arial Black',sans-serif;
+  } 

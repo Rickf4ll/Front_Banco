@@ -1,0 +1,32 @@
+/* Contenedor para la imagen: se posiciona relativo y se centra el contenido */
+.image-container {
+    position: relative;  /* Permite usar posicionamiento absoluto en elementos internos, si es necesario */
+    text-align: center;  /* Centra la imagen horizontalmente */
+    margin-top: 20px;    /* Ajusta la separación desde la parte superior */
+  }
+  
+  /* Estilos para la imagen */
+  .custom-image {
+    width: 700px;        /* Ancho deseado */
+    height: auto;        /* Mantiene la proporción original */
+    /* Puedes agregar más estilos para posicionarla */
+    margin-left: 10px;
+    margin-top: 140px;   /* Ejemplo de margen lateral */
+    /* Si deseas posicionamiento absoluto, puedes agregar: */
+    /* position: absolute;
+       top: 50px;
+       left: 100px; */
+  }
+  .custom-button {
+    background-color: #fa0000;
+    color: #fff ;
+    width: 235px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin: 10px; /* Add some margin */
+    position: relative;
+    top: 120px; /* Adjust the top position as needed */
+    left: 390px; /* Adjust the left position as needed */
+    font-size: 18px;
+    font-family: 'Arial Black',sans-serif;
+  } 
+  
