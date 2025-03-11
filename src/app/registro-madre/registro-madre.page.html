@@ -1,0 +1,287 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="registro-madre.page.scss">
+    </head>
+<body>
+    <form>
+        <h2>Registro de Madre</h2>
+    
+        <!-- Primera fila: DNI -->
+        <div class="row">
+            <div class="col">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni">
+            </div>
+        </div>
+    
+        <!-- Segunda fila: Nombre, Apellido Paterno, Apellido Materno -->
+        <div class="row">
+            <div class="col">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+            </div>
+            <div class="col">
+                <label for="apellidoPaterno">Apellido Paterno</label>
+                <input type="text" id="apellidoPaterno">
+            </div>
+            <div class="col">
+                <label for="apellidoMaterno">Apellido Materno</label>
+                <input type="text" id="apellidoMaterno">
+            </div>
+        </div>
+    
+        <!-- Tercera fila: Fecha de Nacimiento, Teléfono, Talla -->
+        <div class="row">
+            <div class="col">
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fechaNacimiento">
+            </div>
+            <div class="col">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono">
+            </div>
+            <div class="col">
+                <label for="talla">Talla</label>
+                <input type="text" id="talla">
+            </div>
+        </div>
+    
+        <!-- Cuarta fila: Departamento, Provincia, Distrito -->
+        <div class="row">
+            <div class="col">
+                <label for="departamento">Departamento</label>
+                <input type="text" id="departamento">
+            </div>
+            <div class="col">
+                <label for="provincia">Provincia</label>
+                <input type="text" id="provincia">
+            </div>
+            <div class="col">
+                <label for="distrito">Distrito</label>
+                <input type="text" id="distrito">
+            </div>
+        </div>
+    
+        <!-- Quinta fila: Dirección (Una sola columna) -->
+        <div class="row">
+            <div class="col">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion">
+            </div>
+        </div>
+    
+        <!-- Sexta fila: Centro de Salud de Procedencia, Número de Controles -->
+        <div class="row">
+            <div class="col">
+                <label for="centroSalud">Centro de Salud de Procedencia</label>
+                <input type="text" id="centroSalud">
+            </div>
+            <div class="col">
+                <label for="numControles">Número de Controles</label>
+                <input type="text" id="numControles">
+            </div>
+        </div>
+    
+        <!-- Séptima fila: Ocupación, Peso Inicial, Peso Final -->
+        <div class="row">
+            <div class="col">
+                <label for="ocupacion">Ocupación</label>
+                <input type="text" id="ocupacion">
+            </div>
+            <div class="col">
+                <label for="pesoInicial">Peso Inicial</label>
+                <input type="text" id="pesoInicial">
+            </div>
+            <div class="col">
+                <label for="pesoFinal">Peso Final</label>
+                <input type="text" id="pesoFinal">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="transfusion">Transfusión de Sangre</label>
+                <div class="radio-group">
+                    <input type="radio" name="drogas" value="si"> Sí
+                    <input type="radio" name="drogas" value="no"> No
+                </div>
+            </div>
+    
+    
+            <div class="col">
+                <label for="cigarros">Consumo de Cigarros</label>
+                <div class="radio-group">
+                    <input type="radio" name="drogas" value="si"> Sí
+                    <input type="radio" name="drogas" value="no"> No
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="drogas">Consumo de Drogas</label>
+                <div class="radio-group">
+                    <input type="radio" name="drogas" value="si"> Sí
+                    <input type="radio" name="drogas" value="no"> No
+                </div>
+            </div>
+            <div class="col">
+                <label for="medicamentos">Consumo de Medicamentos</label>
+                <div class="radio-group">
+                    <input type="radio" name="drogas" value="si"> Sí
+                    <input type="radio" name="drogas" value="no"> No
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <label for="enfermedades">Enfermedades:</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="enfermedades" value="positivo"> Positivo
+                    <input type="radio" name="enfermedades" value="negativo"> Negativo
+                    <input type="radio" name="enfermedades" value="nose"> No se Sabe
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <label for="serologicos">Prueba Serológicos:</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="serologicos" value="positivo"> Positivo
+                    <input type="radio" name="serologicos" value="negativo"> Negativo
+                    <input type="radio" name="serologicos" value="nose"> No se Sabe
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <label for="sifilis">Prueba Sífilis:</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="sifilis" value="positivo"> Positivo
+                    <input type="radio" name="sifilis" value="negativo"> Negativo
+                    <input type="radio" name="sifilis" value="nose"> No se Sabe
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <label for="hepatitis">Prueba Hepatitis:</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="hepatitis" value="positivo"> Positivo
+                    <input type="radio" name="hepatitis" value="negativo"> Negativo
+                    <input type="radio" name="hepatitis" value="nose"> No se Sabe
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <div class="row">
+            <div class="col">
+                <label for="vih">Prueba VIH:</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="vih" value="positivo"> Positivo
+                    <input type="radio" name="vih" value="negativo"> Negativo
+                    <input type="radio" name="vih" value="nose"> No se Sabe
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <label for="hemoglobinas">Hemoglobinas:</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="hemoglobinas" value="positivo"> Positivo
+                    <input type="radio" name="hemoglobinas" value="negativo"> Negativo
+                    <input type="radio" name="hemoglobinas" value="nose"> No se Sabe
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="enfermedadActual">Enfermedad Actual</label>
+            </div>
+            <div class="col">
+                <input type="text" id="enfermedadActual">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="aceptadonarleche">¿Acepta donar leche materna?:</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="drogas" value="si"> Sí
+                    <input type="radio" name="drogas" value="no"> No
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="aptaparadonar">¿Está apta donar?:</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="drogas" value="si"> Sí
+                    <input type="radio" name="drogas" value="no"> No
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="menoredad">Menor de edad</label>
+            </div>
+            <div class="col">
+                <div class="radio-group">
+                    <input type="radio" name="drogas" value="si"> Sí
+                    <input type="radio" name="drogas" value="no"> No
+                </div>
+            </div>
+        </div>
+        <ion-item>
+            <ion-label>Subir Imágenes</ion-label>
+        </ion-item>
+    
+        <div class="button-group">
+            <ion-button (click)="seleccionarDesdeGaleria()">Galería</ion-button>
+            <ion-button (click)="tomarFoto()">Cámara</ion-button>
+        </div>
+    
+        <div class="preview-container">
+            <div *ngFor="let imagen of imagenesSeleccionadas; let i = index" class="preview">
+                <img [src]="imagen" class="preview-img" (click)="openImageInNewTab(imagen)" />
+                <button (click)="eliminarImagen(i)" class="remove-btn">X</button>
+            </div>
+        </div>
+        <div class="image-preview">
+            <img *ngFor="let img of images" [src]="img" class="preview-img" (click)="openImageInNewTab(img)">
+          </div>
+          
+    
+        <div class="row">
+            <div class="col">
+                <button type="submit">REGISTRAR</button>
+            </div>
+            <div class="col">
+                <button type="back">REGRESAR</button>
+            </div>
+        </div>
+    
+    </form>
+</body>
+</html>
+<!-- Formulario de Registro de Madre -->

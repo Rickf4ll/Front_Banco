@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="registro-madre.page.scss">
+</head>
+
+<body>
+    <form>
+        <h2>CREAR HISTORIA CLÍNICA</h2>
+        <div class="row">
+            <div class="col">
+                <label for="nro_cuna">NRO de cuna:</label>
+                <input type="text" id="nro_cuna" name="nro_cuna">
+            </div>
+            <div class="col">
+                <label for="dni_madre">DNI de la madre:</label>
+                <input type="text" id="dni_madre" name="dni_madre">
+            </div>
+        </div>
+        <div class="row">
+            <label for="nro_historia">NRO de historia clínica:</label>
+            <input type="text" id="nro_historia" name="nro_historia">
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres">
+            </div>
+            <div class="col">
+                <label for="area">Área:</label>
+                <select id="area" name="area">
+                    <option value="UCIN">UCIN</option>
+                    <option value="UCIN Quirúrgico">UCIN Quirúrgico</option>
+                    <option value="Engorde">Engorde</option>
+                    <option value="Intermedio">Intermedio</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <label for="apellido_paterno">Apellido Paterno:</label>
+        <input type="text" id="apellido_paterno" name="apellido_paterno">
+
+        <label for="apellido_materno">Apellido Materno:</label>
+        <input type="text" id="apellido_materno" name="apellido_materno">
+
+        <div class="row">
+            <div class="col">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <div class="col">
+                <label for="genero">Género:</label>
+                <div class="gender-container">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="peso_nacimiento">Peso de Nacimiento (gr):</label>
+                <input type="number" id="peso_nacimiento" name="peso_nacimiento">
+            </div>
+            <div class="col">
+                <label for="edad_gestacional">Edad Gestacional (semanas):</label>
+                <input type="number" id="edad_gestacional" name="edad_gestacional">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="detalle_peso">Detalles del Peso de Nacimiento:</label>
+                <input type="text" id="detalle_peso" name="detalle_peso" value="COLORARSE SEGÚN EL PESO AUTOMATICO"
+                    readonly>
+            </div>
+            <div class="col">
+                <label for="detalle_edad">Detalles Edad Gestacional:</label>
+                <input type="text" id="detalle_edad" name="detalle_edad" value="Pretermino AUTOCOMPLETADO" readonly>
+            </div>
+        </div>
+        <h2>ENFERMEDADES DEL PACIENTE</h2>
+        <div class="row">
+            <div class="col">
+                <label for="gastrointestinales">Gastrointestinales:</label>
+                <div class="input-group">
+                    <select id="gastrointestinales" name="gastrointestinales">
+                        <option value="" selected disabled>Seleccionar enfermedad</option>
+                        <option value="Enterocolitis necrotizante">Enterocolitis necrotizante (NEC)</option>
+                        <option value="Atresia duodenal">Atresia duodenal</option>
+                        <option value="Atresia esofágica">Atresia esofágica</option>
+                        <option value="Síndrome de malabsorción">Síndrome de malabsorción</option>
+                        <option value="Onfalocele">Onfalocele</option>
+                        <option value="Gastrosquisis">Gastrosquisis</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <label for="respiratorios">Respiratorios:</label>
+                <div class="input-group">
+                    <select id="respiratorios" name="respiratorios">
+                        <option value="" selected disabled>Seleccionar enfermedad</option>
+                        <option value="Asfixia neonatal">Asfixia neonatal</option>
+                        <option value="Síndrome de membrana hialina">Síndrome de membrana hialina</option>
+                        <option value="Síndrome de aspiración meconial">Síndrome de aspiración meconial</option>
+                        <option value="Taquipnea transitoria">Taquipnea transitoria</option>
+                        <option value="Neumonía">Neumonía</option>
+                        <option value="Bronquiolitis">Bronquiolitis</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button">+</button>
+            </div>
+            <div class="col">
+                <button type="button">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="infecciosos">Infecciosos:</label>
+                <div class="input-group">
+                    <select id="infecciosos" name="infecciosos">
+                        <option value="" selected disabled>Seleccionar enfermedad</option>
+                        <option value="Sepsis temprana">Sepsis temprana</option>
+                        <option value="Sepsis tardía">Sepsis tardía</option>
+                        <option value="Infección intrahospitalaria">Infección intrahospitalaria</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <label for="otros">Otros:</label>
+                <div class="input-group">
+                    <select id="otros" name="otros">
+                        <option value="" selected disabled>Seleccionar enfermedad</option>
+                        <option value="Cardiopatía congénita">Cardiopatía congénita</option>
+                        <option value="Hiperbilirrubinemia">Hiperbilirrubinemia (ictericia)</option>
+                        <option value="Incompatibilidad RH">Incompatibilidad RH</option>
+                        <option value="Incompatibilidad ABO">Incompatibilidad ABO</option>
+                        <option value="Síndrome de Down">Síndrome de Down</option>
+                        <option value="Trastorno hidro-electrolítico">Trastorno hidro-electrolítico</option>
+                        <option value="Policitemia">Policitemia</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button">+</button>
+            </div>
+            <div class="col">
+                <button type="button">+</button>
+            </div>
+        </div>
+
+        <div class="nueva-enfermedad-container">
+            <h2>NUEVA ENFERMEDAD:</h2>
+
+            <label for="nombre_enfermedad">Nombre de la enfermedad:</label>
+            <input type="text" id="nombre_enfermedad" name="nombre_enfermedad" placeholder="Añadir enfermedad">
+
+            <label for="categoria_enfermedad">Categoría:</label>
+            <div class="row">
+                <div class="col">
+                    <select id="categoria_enfermedad" name="categoria_enfermedad">
+                        <option value="" selected>Seleccionar categoría</option>
+                        <option value="Gastrointestinales">Gastrointestinales</option>
+                        <option value="Respiratorios">Respiratorios</option>
+                        <option value="Infecciosos">Infecciosos</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-guardar">GUARDAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <label for="observaciones">OBSERVACIONES:</label>
+            <textarea id="observaciones" placeholder="Agregar observaciones"></textarea>
+        </div>
+
+
+
+        <div class="buttons">
+            <button class="back-btn">REGRESAR</button>
+            <button type="submit" class="register-btn">REGISTRAR</button>
+        </div>
+
+    </form>
+</body>
+</html>
