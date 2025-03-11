@@ -1,0 +1,7 @@
+{
+  "name": "Front_Banco",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

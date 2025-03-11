@@ -1,0 +1,707 @@
+.background-container {
+    position: fixed;
+    top: 13%;
+    left: 8%;
+    width: 85%;
+    height: 80%;
+    background-image: url('../../assets/icon/logo_banco_de_leche.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  .custom-text{
+    position: absolute;
+    font-size: 120px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial Black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 120px;
+    margin-left: 410px; /* Ajusta el margen superior según sea necesario */	
+  }
+  .custom-text1{
+    position: absolute;
+    font-size: 60px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial ', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 350px;
+    margin-left: 0px; /* Ajusta el margen superior según sea necesario */	
+  }
+
+  .custom-form {
+    position: absolute;
+    top: 160px;
+    font-family: 'Arial Black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    left: 490px;
+    width: 800px;  /* Ajusta el ancho */
+    height: 180px; /* Ajusta el alto */
+    font-size: 40px; /* Ajusta el tamaño del texto */
+    
+  }
+  .custom-form1 {
+    position: absolute;
+    top: 160px;
+    font-family: 'Arial Black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    left: 90px;
+    width: 300px;  /* Ajusta el ancho */
+    height: 180px; /* Ajusta el alto */
+    font-size: 40px; /* Ajusta el tamaño del texto */
+    
+  }
+ 
+  .custom-text2{
+    font-size: 50px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial ', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top:890px;
+    margin-left: -700px; /* Ajusta el margen superior según sea necesario */	
+  }
+ 
+  .custom-text3{
+    position: absolute;
+    font-size: 60px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 560px;
+   margin-left: 0px; /* Ajusta el margen superior según sea necesario */	
+  }
+
+  .custom-text4{
+    position: absolute;
+    font-size: 50px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: -70px;
+    margin-left: 900px; /* Ajusta el margen superior según sea necesario */	
+  }
+  .radio-container1 {
+    position: absolute;
+    font-size: 25px;
+    top: 780px;   /* Ajusta la distancia desde la parte superior */ 
+    margin-left: 820px;
+    mat-radio-button {
+      transform: scale(1.0);  /* Aumenta el tamaño del botón */
+      margin-right: 120px;      /* Separa los botones entre sí */
+    }
+  }
+
+  .custom-text5{
+    position: absolute;
+    font-size: 60px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 650px;
+    margin-left: 100px; /* Ajusta el margen superior según sea necesario */	
+  }
+  .table-container {
+    position: absolute;
+    width: 100%; /* Ancho de la tabla */
+    max-width: 1100px; /* Ancho máximo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 20px auto; /* Centrar la tabla */
+    margin-top: 790px; /* Ajusta la posición vertical */
+    margin-left: 150px; /* Ajusta la posición horizontal */
+  }
+  
+  table {
+    width: 100%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Colapsar bordes */
+  }
+  
+  table, th, td {
+    border: 1px solid black; /* Bordes negros */
+  }
+  
+  th, td {
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+    font-size: 20px;
+  }
+  .custom-button {
+    background-color: #1900ff;
+    color: white;
+    width: 290px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin: 10px; /* Add some margin */
+    position: absolute;
+    margin-top: 1100px; /* Adjust the top position as needed */
+    left: 900px; /* Adjust the left position as needed */
+    font-size: 30px;
+    font-family: 'Arial Black',sans-serif;
+  } 
+  .custom-button1 {
+    background-color: #ff0000;
+    color: white;
+    width: 290px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin: 10px; /* Add some margin */
+    position: relative;
+    margin-top: 1100px; /* Adjust the top position as needed */
+    left: 300px; /* Adjust the left position as needed */
+    font-size: 30px;
+    font-family: 'Arial Black',sans-serif;
+  } 
+
+  .custom-checkbox1 {
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 50px; /* Tamaño de texto aumentado */
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.checkmark {
+    height: 100px; /* Nuevo tamaño del checkbox */
+    width: 100px;  /* Nuevo tamaño del checkbox */
+    background-color: #eee;
+    margin-right: 20px; /* Espacio aumentado */
+    border: 3px solid #ccc; /* Borde más grueso */
+    border-radius: 10px; /* Bordes más redondeados */
+    display: inline-block;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 35px;   /* Ajustado para nuevo tamaño */
+    top: 25px;    /* Ajustado para nuevo tamaño */
+    width: 15px;  /* Aumentado */
+    height: 30px; /* Aumentado */
+    border: solid white;
+    border-width: 0 6px 6px 0; /* Borde más grueso */
+    transform: rotate(45deg);
+}
+
+/* Mantenemos los demás estilos igual */
+.custom-checkbox1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox1 input:checked ~ .checkmark {
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+
+.custom-checkbox1 input:checked ~ .checkmark::after {
+    display: block;
+}
+
+/* Estilos para el overlay y la alerta (sin cambios) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.alert-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.custom-checkbox2 {
+  position: absolute; /* Posicionamiento absoluto para moverlo libremente */
+  margin-top: 560px; /* Distancia desde la parte superior */
+  margin-left: 45px; /* Distancia desde la izquierda */
+  cursor: pointer;
+  font-size: 50px; /* Tamaño del texto */
+  display: flex;
+  align-items: center; /* Alinea el texto y el checkbox verticalmente */
+  user-select: none; /* Evita que el texto se seleccione al hacer clic */
+}
+
+/* Oculta el checkbox nativo */
+.custom-checkbox2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Crea el checkbox personalizado */
+.checkmark {
+height: 25px; /* Tamaño del checkbox */
+width: 25px; /* Tamaño del checkbox */
+background-color: #eee; /* Color de fondo */
+margin-right: 10px; /* Espacio entre el checkbox y el texto */
+border: 2px solid #ccc; /* Borde del checkbox */
+border-radius: 5px; /* Esquinas redondeadas */
+display: inline-block; /* Asegura que el checkbox esté en línea con el texto */
+}
+
+/* Cambia el color de fondo cuando el checkbox está marcado */
+.custom-checkbox2 input:checked ~ .checkmark {
+background-color: #2196F3; /* Color azul */
+border-color: #2196F3;
+}
+
+/* Crea el indicador de check (✓) */
+.checkmark::after {
+content: "";
+position: absolute;
+display: none;
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+}
+
+/* Muestra el indicador de check cuando el checkbox está marcado */
+.custom-checkbox2 input:checked ~ .checkmark::after {
+display: block;
+}
+
+/* Estilos para el overlay y la alerta (sin cambios) */
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 999;
+}
+
+.alert-box {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: white;
+padding: 20px;
+z-index: 1000;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.custom-checkbox3 {
+  position: absolute;
+  position: absolute; /* Posicionamiento absoluto para moverlo libremente */
+  margin-top: 650px; /* Distancia desde la parte superior */
+  margin-left: 50px; /* Distancia desde la izquierda */
+  cursor: pointer;
+  font-size: 45px; /* Tamaño del texto */
+  display: flex;
+  align-items: center; /* Alinea el texto y el checkbox verticalmente */
+  user-select: none; /* Evita que el texto se seleccione al hacer clic */
+}
+
+/* Oculta el checkbox nativo */
+.custom-checkbox3 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Crea el checkbox personalizado */
+.checkmark {
+height: 25px; /* Tamaño del checkbox */
+width: 25px; /* Tamaño del checkbox */
+background-color: #eee; /* Color de fondo */
+margin-right: 10px; /* Espacio entre el checkbox y el texto */
+border: 2px solid #ccc; /* Borde del checkbox */
+border-radius: 5px; /* Esquinas redondeadas */
+display: inline-block; /* Asegura que el checkbox esté en línea con el texto */
+}
+
+/* Cambia el color de fondo cuando el checkbox está marcado */
+.custom-checkbox3 input:checked ~ .checkmark {
+background-color: #2196F3; /* Color azul */
+border-color: #2196F3;
+}
+
+/* Crea el indicador de check (✓) */
+.checkmark::after {
+content: "";
+position: absolute;
+display: none;
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+}
+
+/* Muestra el indicador de check cuando el checkbox está marcado */
+.custom-checkbox3 input:checked ~ .checkmark::after {
+display: block;
+}
+
+/* Estilos para el overlay y la alerta (sin cambios) */
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 999;
+}
+
+.alert-box {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: white;
+padding: 20px;
+z-index: 1000;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.custom-checkbox4 {
+  position: absolute; /* Posicionamiento absoluto para moverlo libremente */
+  margin-top: 750px; /* Distancia desde la parte superior */
+  margin-left: 50px; /* Distancia desde la izquierda */
+  cursor: pointer;
+  font-size: 45px; /* Tamaño del texto */
+  display: flex;
+  align-items: center; /* Alinea el texto y el checkbox verticalmente */
+  user-select: none; /* Evita que el texto se seleccione al hacer clic */
+}
+
+/* Oculta el checkbox nativo */
+.custom-checkbox4 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Crea el checkbox personalizado */
+.checkmark {
+height: 25px; /* Tamaño del checkbox */
+width: 25px; /* Tamaño del checkbox */
+background-color: #eee; /* Color de fondo */
+margin-right: 10px; /* Espacio entre el checkbox y el texto */
+border: 2px solid #ccc; /* Borde del checkbox */
+border-radius: 5px; /* Esquinas redondeadas */
+display: inline-block; /* Asegura que el checkbox esté en línea con el texto */
+}
+
+/* Cambia el color de fondo cuando el checkbox está marcado */
+.custom-checkbox4 input:checked ~ .checkmark {
+background-color: #2196F3; /* Color azul */
+border-color: #2196F3;
+}
+
+/* Crea el indicador de check (✓) */
+.checkmark::after {
+content: "";
+position: absolute;
+display: none;
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+}
+
+/* Muestra el indicador de check cuando el checkbox está marcado */
+.custom-checkbox4 input:checked ~ .checkmark::after {
+display: block;
+}
+
+/* Estilos para el overlay y la alerta (sin cambios) */
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 999;
+}
+
+.alert-box {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: white;
+padding: 20px;
+z-index: 1000;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+ /* Contenedor del checkbox personalizado */
+
+ .custom-checkbox {
+  position: absolute; /* Posicionamiento absoluto */
+  display: flex;
+  margin-top: 460;
+  align-items: center; /* Alinea el texto y el checkbox verticalmente */
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 50px; /* Tamaño del texto */
+  user-select: none; /* Evita que el texto se seleccione al hacer clic */
+}
+
+/* Oculta el checkbox nativo */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Crea el checkbox personalizado */
+.checkmark {
+  height: 25px; /* Tamaño del checkbox */
+  width: 25px; /* Tamaño del checkbox */
+  background-color: #eee; /* Color de fondo */
+  margin-right: 10px; /* Espacio entre el checkbox y el texto */
+  border: 2px solid #ccc; /* Borde del checkbox */
+  border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Cambia el color de fondo cuando el checkbox está marcado */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3; /* Color azul */
+  border-color: #2196F3;
+}
+
+/* Crea el indicador de check (✓) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Muestra el indicador de check cuando el checkbox está marcado */
+.custom-checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+
+
+.custom-checkbox6 {
+  position: absolute; /* Posicionamiento absoluto */
+  display: flex;
+  align-items: center; /* Alinea el texto y el checkbox verticalmente */
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 50px; /* Tamaño del texto */
+  user-select: none; /* Evita que el texto se seleccione al hacer clic */
+}
+
+/* Oculta el checkbox nativo */
+.custom-checkbox6 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Crea el checkbox personalizado */
+.checkmark {
+  height: 25px; /* Tamaño del checkbox */
+  width: 25px; /* Tamaño del checkbox */
+  background-color: #eee; /* Color de fondo */
+  margin-right: 10px; /* Espacio entre el checkbox y el texto */
+  border: 2px solid #ccc; /* Borde del checkbox */
+  border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Cambia el color de fondo cuando el checkbox está marcado */
+.custom-checkbox6 input:checked ~ .checkmark {
+  background-color: #2196F3; /* Color azul */
+  border-color: #2196F3;
+}
+
+/* Crea el indicador de check (✓) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Muestra el indicador de check cuando el checkbox está marcado */
+.custom-checkbox6 input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.custom-checkbox1{
+  position: absolute; /* Posicionamiento absoluto */
+  display: flex;
+  margin-top: 460;
+  align-items: center; /* Alinea el texto y el checkbox verticalmente */
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 40px; /* Tamaño del texto */
+  user-select: none; /* Evita que el texto se seleccione al hacer clic */
+}
+
+/* Oculta el checkbox nativo */
+.custom-checkbox1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Crea el checkbox personalizado */
+.checkmark {
+  height: 25px; /* Tamaño del checkbox */
+  width: 25px; /* Tamaño del checkbox */
+  background-color: #eee; /* Color de fondo */
+  margin-right: 10px; /* Espacio entre el checkbox y el texto */
+  border: 2px solid #ccc; /* Borde del checkbox */
+  border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Cambia el color de fondo cuando el checkbox está marcado */
+.custom-checkbox1 input:checked ~ .checkmark {
+  background-color: #2196F3; /* Color azul */
+  border-color: #2196F3;
+}
+
+/* Crea el indicador de check (✓) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Muestra el indicador de check cuando el checkbox está marcado */
+.custom-checkbox1 input:checked ~ .checkmark::after {
+  display: block;
+}
+.custom-checkbox9{
+  position: absolute; /* Posicionamiento absoluto */
+  display: flex;
+  margin-top: 460;
+  align-items: center; /* Alinea el texto y el checkbox verticalmente */
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 50px; /* Tamaño del texto */
+  user-select: none; /* Evita que el texto se seleccione al hacer clic */
+}
+
+/* Oculta el checkbox nativo */
+.custom-checkbox9 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Crea el checkbox personalizado */
+.checkmark {
+  height: 25px; /* Tamaño del checkbox */
+  width: 25px; /* Tamaño del checkbox */
+  background-color: #eee; /* Color de fondo */
+  margin-right: 10px; /* Espacio entre el checkbox y el texto */
+  border: 2px solid #ccc; /* Borde del checkbox */
+  border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Cambia el color de fondo cuando el checkbox está marcado */
+.custom-checkbox9 input:checked ~ .checkmark {
+  background-color: #2196F3; /* Color azul */
+  border-color: #2196F3;
+}
+
+/* Crea el indicador de check (✓) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Muestra el indicador de check cuando el checkbox está marcado */
+.custom-checkbox9 input:checked ~ .checkmark::after {
+  display: block;
+}
+.image-container {
+  position: absolute;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .responsive-image {
+    position: absolute;
+    max-width: 90px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+}
+.image-container1 {
+  position: absolute;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .responsive-image1 {
+    position: absolute;
+    max-width: 70px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+}

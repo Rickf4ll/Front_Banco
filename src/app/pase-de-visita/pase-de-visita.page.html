@@ -1,0 +1,158 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pase de visita</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="background-container"></div>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pase de visita</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <h1 class="center-content">Registrar pase de Visita</h1>
+  </div>
+
+  <!-- Fecha del día -->
+  <div class="fecha-container">
+    <mat-form-field  class="custom-date-field">
+      <input matInput class="custom-date-input" [matDatepicker]="picker" [value]="today">
+      <mat-hint>DD/MM/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <!-- Número de cuna -->
+  <h1 class="cuna-title">N° de Cuna:</h1>
+  <mat-form-field class="custom-form" appearance="outline">
+    <mat-label></mat-label>
+    <input matInput placeholder="ID Paciente">
+    <mat-icon matSuffix></mat-icon>
+  </mat-form-field>
+
+  <div>
+  <!-- Llamada de teléfono -->
+  <h1 class="llamada-title">Llamada de teléfono:</h1>
+  </div>
+  <div class="radio-container">
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">Si</mat-radio-button>
+      <mat-radio-button value="2">No</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <!-- Peso del día anterior -->
+  <h1 class="peso-title">Peso del día anterior (gr):</h1>
+  <div>
+  <mat-form-field class="custom-form1" appearance="outline">
+    <mat-label></mat-label>
+    <input matInput placeholder="">
+    <mat-icon matSuffix></mat-icon>
+  </mat-form-field>
+  </div>
+  <!-- Peso actual -->
+  <div>
+  <h1 class="actual-title">Peso Actual:</h1>
+  </div>
+  <div>
+  <mat-form-field class="custom-form2" appearance="outline">
+    <mat-label></mat-label>
+    <input matInput placeholder="">
+    <mat-icon matSuffix></mat-icon>
+  </mat-form-field>
+  </div>
+  <!-- Delta peso -->
+  <h1 class="delta-title">Delta Peso:</h1>
+  <mat-form-field class="custom-form3" appearance="outline">
+    <mat-label></mat-label>
+    <input matInput placeholder="">
+    <mat-icon matSuffix></mat-icon>
+  </mat-form-field>
+
+  <!-- Requerimiento del día -->
+  <h1 class="requerimiento-title">Requerimiento del día:</h1>
+  <h1 class="tomas-title">Nro° de tomas:</h1>
+  <mat-form-field class="custom-form4" appearance="outline">
+    <mat-label></mat-label>
+    <input matInput placeholder="">
+    <mat-icon matSuffix></mat-icon>
+  </mat-form-field>
+
+  <!-- Cantidad por toma -->
+  <h1 class="cantidad-title">Cantidad por toma:</h1>
+  <mat-form-field class="custom-form5" appearance="outline">
+    <mat-label></mat-label>
+    <input matInput placeholder="">
+    <mat-icon matSuffix></mat-icon>
+  </mat-form-field>
+
+  <!-- Tipo de leche -->
+  <h1 class="tipo-title">Tipo de leche:</h1>
+  <mat-form-field class="custom-form6" appearance="outline">
+    <mat-label></mat-label>
+    <input matInput placeholder="">
+    <mat-icon matSuffix></mat-icon>
+  </mat-form-field>
+
+  <!-- Contenido energético -->
+  <h1 class="contenido-title">Contenido Energético:</h1>
+  <mat-form-field class="cmbx-selection" appearance="outline">
+    <mat-label></mat-label>
+    <mat-select>
+      @for (contenidos of contenidos; track contenidos) {
+        <mat-option [value]="contenidos.value">{{contenidos.viewValue}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Vía de administración -->
+  <h1 class="via-title">Vía de Administración:</h1>
+  <mat-form-field class="cmbx-selection1" appearance="outline">
+    <mat-label></mat-label>
+    <mat-select>
+      @for (vias of vias; track vias) {
+        <mat-option [value]="vias.value">{{vias.viewValue}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Calostro Terapia -->
+  <h1 class="terapia-title">Calostro Terapia:</h1>
+  <div class="radio-container2">
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">Si</mat-radio-button>
+      <mat-radio-button value="2">No</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <!-- Área -->
+  <h1 class="area-title">Área:</h1>
+  <div class="cmbx-selection2">
+    <mat-form-field class="size-cmbx" appearance="outline">
+      <mat-label></mat-label>
+      <mat-select>
+        @for (areas of areas; track areas) {
+          <mat-option [value]="areas.value">{{areas.viewValue}}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <!-- NPO -->
+  <h1 class="npo-title">NPO:</h1>
+  <div class="radio-container1">
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">Si</mat-radio-button>
+      <mat-radio-button value="2">No</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <!-- Botones -->
+  <ion-button class="custom-button" (click)="onSubmit()" color="fff">REGISTRAR</ion-button>
+  <ion-button class="custom-button1" [routerLink]="['/pacientes1']" color="fff" appearance="outlined"> REGRESAR </ion-button>
+</ion-content>

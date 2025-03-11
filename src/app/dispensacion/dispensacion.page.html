@@ -1,0 +1,288 @@
+<ion-content [fullscreen]="true">
+  <div class="background-container"></div>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Dispensacion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Campos de texto que reciben datos externos -->
+  <p>
+    <mat-form-field class="custom-form" appearance="outline">
+      <mat-label>Texto Externo 1</mat-label>
+      <input matInput placeholder="Ingrese texto" [(ngModel)]="externalInput1">
+      <mat-icon matSuffix></mat-icon>
+    </mat-form-field>
+  </p>  
+
+  <p>
+    <mat-form-field class="custom-form1" appearance="outline">
+      <mat-label>Texto Externo 2</mat-label>
+      <input matInput placeholder="Ingrese texto" [(ngModel)]="externalInput2">
+      <mat-icon matSuffix></mat-icon>
+    </mat-form-field>
+  </p> 
+
+  <h1 class="custom-text">-</h1>
+
+  <!-- Checkbox y alerta para Leche Pasteurizada -->
+  <div>
+    <label class="custom-checkbox" style="top: 500px; left: 40px;">
+      <input type="checkbox" (change)="toggleAlert('pasteurizada')" [disabled]="isCheckboxDisabled">
+      <span class="checkmark"></span>
+      Leche Pasteurizada
+    </label>
+  </div>
+  <div *ngIf="showAlertPasteurizada" class="overlay"></div>
+  <div *ngIf="showAlertPasteurizada" class="alert-box">
+    <p>Ingrese un código:</p>
+    <input type="text" [(ngModel)]="codepasteurizada" placeholder="Escriba aquí">
+    <br><br>
+    <button (click)="registerCode('pasteurizada')">Registrar</button>
+  </div>
+
+  <!-- Checkbox y alerta para Leche Autologa + Pasteurizada -->
+  <div>
+    <label class="custom-checkbox2">
+      <input type="checkbox" (change)="toggleAlert('autologaPasteurizada')" [disabled]="isCheckboxDisabled">
+      <span class="checkmark"></span>
+      Leche Autologa + Pasteurizada
+    </label>
+  </div>
+  <div *ngIf="showAlertAutologaPasteurizada" class="alert-box">
+    <p>Ingrese un código:</p>
+    <input type="text" [(ngModel)]="codepasteurizada" placeholder="Escriba aquí">    
+    <p>Ingrese la cantidad de leche Autologa:</p>
+    <input type="number" [(ngModel)]="quantity" placeholder="Escriba la cantidad aquí">
+    <p>Ingrese la cantidad de formula:</p>
+    <input type="number" [(ngModel)]="quantity1" placeholder="Escriba la cantidad aquí">
+    <br><br>
+    <button (click)="registerCode('autologaPasteurizada')">Registrar</button>
+  </div>
+
+  <!-- Checkbox y alerta para Leche Pasteurizada + Formula 1 -->
+  <div>
+    <label class="custom-checkbox3">
+      <input type="checkbox" (change)="toggleAlert('pasteurizadaFormula1')" [disabled]="isCheckboxDisabled">
+      <span class="checkmark"></span>
+      Leche Pasteurizada + Formula 1 
+    </label>
+  </div>
+  <div *ngIf="showAlertPasteurizadaFormula1" class="overlay"></div>
+  <div *ngIf="showAlertPasteurizadaFormula1" class="alert-box">
+    <p>Ingrese un código:</p>
+    <input type="text" [(ngModel)]="codepasteurizada" placeholder="Escriba aquí">
+    <br><br>
+    <button (click)="registerCode('pasteurizadaFormula1')">Registrar</button>
+  </div>
+
+  <!-- Checkbox y alerta para Leche Pasteurizada + Formula 4 -->
+  <div>
+    <label class="custom-checkbox4">
+      <input type="checkbox" (change)="toggleAlert('pasteurizadaFormula4')" [disabled]="isCheckboxDisabled">
+      <span class="checkmark"></span>
+      Leche Pasteurizada + Formula 4
+    </label>
+  </div>
+  <div *ngIf="showAlertPasteurizadaFormula4" class="overlay"></div>
+  <div *ngIf="showAlertPasteurizadaFormula4" class="alert-box">
+    <p>Ingrese un código:</p>
+    <input type="text" [(ngModel)]="codepasteurizada" placeholder="Escriba aquí">
+    <br><br>
+    <button (click)="registerCode('pasteurizadaFormula4')">Registrar</button>
+  </div>
+  
+  <!-- Otros checkbox -->
+  <div>
+    <label class="custom-checkbox6" style="top: 490px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="lecheAutologa">
+      <span class="checkmark"></span>
+      Leche autóloga
+    </label>
+  </div>
+  <div>
+    <label class="custom-checkbox" style="margin-top: 550px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="lmd">
+      <span class="checkmark"></span>
+      LMD (lactancia materna directa)
+    </label>
+  </div>
+  <div>
+    <label class="custom-checkbox" style="top: 680px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="formulaTermino1">
+      <span class="checkmark"></span>
+      Fórmula a término 1
+    </label>
+  </div>
+  <div>
+    <label class="custom-checkbox" style="top: 760px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="formulaTermino2">
+      <span class="checkmark"></span>
+      Fórmula a término 2
+    </label>
+  </div>
+  
+  <div class="image-container">
+    <img src="../../assets/icon/sol.png" style="top: 930px; left:750px;" class="responsive-image" />
+  </div>
+  
+  <h1 class="custom-text2">Registro De Tomas</h1>
+  
+  <!-- Checkboxes de tomas: se deshabilitan automáticamente cuando npo está seleccionado -->
+  <div>
+    <label class="custom-checkbox1" style="top: 540px; left: 300px;">
+      <input type="checkbox" [(ngModel)]="toma1" [disabled]="npo">
+      <span class="checkmark"></span>
+      12:00 PM
+    </label>
+  </div>
+  <div class="image-container">
+    <img src="../../assets/icon/sol.png" style="top: 80px; left:750px;" class="responsive-image" />
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 630px; left: 300px;">
+      <input type="checkbox" [(ngModel)]="toma2" [disabled]="npo">
+      <span class="checkmark"></span>
+      2:00 PM
+    </label>
+  </div>
+  <div class="image-container">
+    <img src="../../assets/icon/sol.png" style="top: 170px; left:750px;" class="responsive-image" />
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 720px; left: 300px;">
+      <input type="checkbox" [(ngModel)]="toma3" [disabled]="npo">
+      <span class="checkmark"></span>
+      4:00 PM
+    </label>
+  </div>
+  <div class="image-container">
+    <img src="../../assets/icon/sol.png" style="top: 260px; left:750px;" class="responsive-image" />
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 810px; left: 300px;">
+      <input type="checkbox" [(ngModel)]="toma4" [disabled]="npo">
+      <span class="checkmark"></span>
+      6:00 PM
+    </label>
+  </div>
+  <div class="image-container">
+    <img src="../../assets/icon/sol.png" style="top: 350px; left:750px;" class="responsive-image" />
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 900px; left: 300px;">
+      <input type="checkbox" [(ngModel)]="toma5" [disabled]="npo">
+      <span class="checkmark"></span>
+      8:00 PM
+    </label>
+  </div>
+  <div class="image-container">
+    <img src="../../assets/icon/sol.png" style="top: 440px; left:750px;" class="responsive-image" />
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 990px; left: 300px;">
+      <input type="checkbox" [(ngModel)]="toma6" [disabled]="npo">
+      <span class="checkmark"></span>
+      10:00 PM
+    </label>
+  </div>
+  
+  <div>
+    <div class="image-container1">
+      <img src="../../assets/icon/luna.png" style="top: 460px; left:250px;" class="responsive-image1" />
+    </div>
+    <label class="custom-checkbox1" style="top: 530px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="toma7" [disabled]="npo">
+      <span class="checkmark"></span>
+      12:00 AM
+    </label>
+  </div>
+  <div class="image-container1">
+    <img src="../../assets/icon/luna.png" style="top: 360px; left:250px;" class="responsive-image1" />
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 620px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="toma8" [disabled]="npo">
+      <span class="checkmark"></span>
+      2:00 AM
+    </label>
+  </div>
+  <div class="image-container1">
+    <img src="../../assets/icon/luna.png" style="top: 260px; left:250px;" class="responsive-image1" />
+  </div>
+  <div>
+    <div class="image-container1">
+      <img src="../../assets/icon/luna.png" style="top: 180px; left:250px;" class="responsive-image1" />
+    </div>
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 710px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="toma9" [disabled]="npo">
+      <span class="checkmark"></span>
+      4:00 AM
+    </label>
+  </div>
+  <div class="image-container1">
+    <img src="../../assets/icon/luna.png" style="top: 100px; left:250px;" class="responsive-image1" />
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 800px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="toma10" [disabled]="npo">
+      <span class="checkmark"></span>
+      6:00 AM
+    </label>
+  </div>
+  <div class="image-container1">
+    <img src="../../assets/icon/luna.png" style="top: 0px; left:250px;" class="responsive-image1" />
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 890px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="toma11" [disabled]="npo">
+      <span class="checkmark"></span>
+      8:00 AM
+    </label>
+  </div>
+  <div>
+    <label class="custom-checkbox1" style="top: 980px; left: 800px;">
+      <input type="checkbox" [(ngModel)]="toma12" [disabled]="npo">
+      <span class="checkmark"></span>
+      12:00 PM
+    </label>
+  </div>
+
+  <!-- Checkbox para NPO: al seleccionarlo, se deshabilitan los checkbox de las tomas -->
+  <h4 class="custom-text4">NPO</h4>
+  <div> 
+    <label class="custom-checkbox9" style="top: 910px; left: 1050px;">
+      <input type="checkbox" [(ngModel)]="npo" (change)="onNpoChange()">
+      <span class="checkmark"></span>
+    </label>
+  </div>
+  
+  <h4 class="custom-text5">Leches disponibles</h4>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="columna1">
+        <th mat-header-cell *matHeaderCellDef> Codigo</th>
+        <td mat-cell *matCellDef="let element"> {{element.columna1}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="columna2">
+        <th mat-header-cell *matHeaderCellDef> Cantidad </th>
+        <td mat-cell *matCellDef="let element"> {{element.columna2}} </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="columna3">
+        <th mat-header-cell *matHeaderCellDef> KCAL </th>
+        <td mat-cell *matCellDef="let element"> {{element.columna3}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  
+  <ion-button class="custom-button" [routerLink]="['/registro']" color="fff" appearance="outline"> REGISTRAR </ion-button>
+  <ion-button class="custom-button1" [routerLink]="['/pacientes1']" color="fff" appearance="outline"> REGRESAR </ion-button>
+</ion-content>

@@ -1,0 +1,131 @@
+/* Fondo */
+.background-container {
+    position: fixed;
+    top: 13%;
+    left: 8%;
+    width: 85%;
+    height: 80%;
+    background-image: url('../../assets/icon/logo_banco_de_leche.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+  }
+.container {
+    position: absolute;
+    width: 100%;
+    max-width: 1440px;
+    top: 500px; /* Subimos la sección de entrada de datos */
+    padding: 20px;
+  }
+  
+  /* Título de la sección */
+  .label1 {
+    position: absolute;
+    top: -250px;
+    left: 180px;
+    font-size: 70px;
+    margin-right: 15px;
+  }
+  
+  /* Combobox */
+  .combobox {
+    position: absolute;
+    font-size: 40px;
+    padding: 5px;
+    width: 500px;
+    height: 50px;
+    top: -220px;
+    left: 680px;
+  }
+  
+  /* Contenedor de los registros */
+  .registro-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px; /* Reducimos el margen superior para acercarlos */
+  }
+  
+  /* Etiquetas */
+  .label {
+    font-size: 50px;
+    margin-right: 15px;
+  }
+  
+  /* Inputs */
+  .input-box {
+    font-size: 38px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    margin-right: 180px;
+  }
+  
+  .numero {
+    position: relative;
+    left: 0px;
+  }
+  
+  .cantidad {
+    position: relative;
+    left: 30px;
+  }
+  
+  .hora {
+    position: relative;
+    left: 60px;
+  }
+  
+  /* Botón de agregar */
+  .add-button {
+    position: absolute;
+    font-size: 50px;
+    font-family: Arial black;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 900px;
+    width: 400px;
+    left: 1030px;
+    transform: translateX(-50%);
+  }
+  
+  .add-button:hover {
+    background-color: #218838;
+  }
+  
+  .add-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Botón de guardar */
+  .save-button {
+    position: absolute;
+    font-size: 60px;
+    font-family: Arial black;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 900px;
+    width: 400px;
+    text-align: center;
+    left: 320px;
+    transform: translateX(-50%);
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .save-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

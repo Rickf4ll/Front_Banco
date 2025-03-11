@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro de Leche</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="background-container"></div>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registro de Leche</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <div class="row">
+      <label class="label1">Tipo de leche:</label>
+      <select class="combobox" [(ngModel)]="tiposLeche[0]">
+        <option *ngFor="let tipo of tiposLeche" [value]="tipo">{{ tipo }}</option>
+      </select>
+    </div>
+
+    <div *ngFor="let registro of registros; let i = index" class="row registro-row">
+      <label class="label">N°:</label>
+      <input type="text" class="input-box numero" [value]="registro.numero" readonly>
+
+      <label class="label">Cantidad:</label>
+      <input type="text" class="input-box cantidad" [(ngModel)]="registro.cantidad" [disabled]="registro.guardado">
+
+      <label class="label">Hora:</label>
+      <input type="text" class="input-box hora" [value]="registro.hora" readonly>
+    </div>
+
+    <div class="row">
+      <button class="add-button" (click)="agregarRegistro()">➕ Agregar</button>
+    </div>
+
+    <div class="row">
+      <button class="save-button" (click)="guardarRegistros()">Guardar</button>
+    </div>
+  </div>
+</ion-content>

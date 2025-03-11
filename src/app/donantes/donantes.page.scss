@@ -1,0 +1,479 @@
+.background-container {
+    position: fixed;
+    top: 13%;
+    left: 8%;
+    width: 85%;
+    height: 80%;
+    background-image: url('../../assets/icon/logo_banco_de_leche.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+  }  
+  /* Estilos para tarjetas */
+  .custom-card{
+    background-color: #01a9a3; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 200px; /* Ancho aumentado */
+    height: 100px; /* Alto aumentado */
+    margin: 30px auto; /* Centrado y margen */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    font-family: 'Arial Black', sans-serif;
+    text-align: center; /* Texto centrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -620px;
+  }
+  .content-container
+  {
+    margin-top: 100px;
+  }
+  .seccion-movible {
+    margin-top: 100px; /* Baja los componentes 100px */
+  }
+  .custom-text{
+    font-size: 80px; /* Tamaño de fuente aumentado */
+    font-family: 'Arial Black', sans-serif;
+    text-align: center; /* Texto centrado */
+    margin-top: 50px; /* Margen superior */
+  }
+  .custom-card1
+  {
+    background-color: #01a9a3; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 400px; /* Ancho aumentado */
+    height: 100px; /* Alto aumentado */
+    margin: 30px auto; /* Centrado y margen */
+    font-size: 40px; /* Tamaño de fuente aumentado */
+    font-family: 'Arial Black', sans-serif;
+    text-align: center; /* Texto centrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -130px;
+    left: -300px;
+  }
+  .custom-card2
+  {
+    background-color: #01a9a3; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 400px; /* Ancho aumentado */
+    height: 100px; /* Alto aumentado */
+    margin: 30px auto; /* Centrado y margen */
+    font-size: 40px; /* Tamaño de fuente aumentado */
+    font-family: 'Arial Black', sans-serif;
+    text-align: center; /* Texto centrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -260px;
+    left: 120px;
+  } 
+  .custom-card3
+  {
+    background-color: #01a9a3; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 380px; /* Ancho aumentado */
+    height: 100px; /* Alto aumentado */
+    margin: 30px auto; /* Centrado y margen */
+    font-size: 40px; /* Tamaño de fuente aumentado */
+    font-family: 'Arial Black', sans-serif;
+    text-align: center; /* Texto centrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:  -390px;
+    left: 520px;
+  }
+
+  /* Estilos para botones */
+  .custom-button
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: -410px;
+    margin-left: 620px;
+  } 
+  .custom-button1
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: -410px;
+    margin-left: 1030px;
+  } 
+  .custom-button3
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: -320px;
+    margin-left: 620px; 
+  } .custom-button4
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: -320px;
+    margin-left: 1030px;
+  }
+  .custom-button-juridico
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: -140px;
+    margin-left:620px;
+  }
+  .custom-button3-juridico
+  {
+    position:  absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: -40px;
+    margin-left: 620px;
+  }
+  .custom-button1-juridico
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    background-color: #fff; /* Fondo blanco */
+    color: #fad000; /* Texto amarillo */
+    border: 5px solid #fff700; /* Borde amarillo */ 
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: -140px;
+    margin-left: 1030px;
+  } .custom-button4-juridico
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    background-color: #fff; /* Fondo blanco */
+    color: #fad000; /* Texto amarillo */
+    border: 5px solid #fff700; /* Borde amarillo */ 
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: -40px;
+    margin-left: 1030px;
+  }
+  .custom-button-engorde
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+      width: 400px; /* Ancho aumentado */
+      height: 80px; /* Alto aumentado */
+      font-size: 30px; /* Tamaño de fuente aumentado */
+      margin: 20px; /* Margen aumentado */
+      border-radius: 10px; /* Bordes redondeados */
+      font-family: 'Arial Black', sans-serif;
+      margin-top: 160px;
+      margin-left: 620px;
+  } 
+  .custom-button3-engorde{
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 260px;
+    margin-left: 620px;
+
+  }
+  .custom-button1-engorde
+  {
+    width: 400px; /* Ancho aumentado */
+    position: absolute; /* Asegura que no se muevan con el margen */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 160px;
+    margin-left: 1030px;   
+  } 
+  .custom-button4-engorde
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 260px;
+    margin-left: 1030px
+  }
+  .custom-button-intermedio
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 460px;
+    margin-left: 620px;
+  } 
+  .custom-button3-intermedio
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 560px;
+    margin-left: 620px;
+  }
+  .custom-button1-intermedio
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 460px;
+    margin-left: 1030px;
+  }
+  .custom-button4-intermedio {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 560px;
+    margin-left: 1030px;
+  }
+  
+  .custom-buttonbus, .custom-button, .custom-button3, .custom-button-juridico, .custom-button3-juridico,
+  .custom-button-engorde, .custom-button3-engorde, .custom-button-intermedio, .custom-button3-intermedio {
+    background-color: #fad000; /* Color amarillo */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .custom-buttonbus2,.custom-button1, .custom-button4,
+  .custom-button1-engorde, .custom-button4-engorde, .custom-button1-intermedio, .custom-button4-intermedio {
+    background-color: #fff; /* Fondo blanco */
+    color: #fad000; /* Texto amarillo */
+    border: 5px solid #fff700; /* Borde amarillo */
+  }
+  .custom-form {
+    position: absolute;
+    top: 1680px;
+    left: 350px;
+    width: 480px; /* Aumentado */
+    font-size: 50px; /* Aumentado */
+    border-radius: 50px; /* Bordes redondeados */
+  }
+  
+  .custom-buttonbuscar {
+    position: absolute;
+    background-color: #1900ff;
+    color: white;
+    width: 400px; /* Aumentado */
+    height: 100px; /* Aumentado */
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px; /* Aumentado */
+    margin: 20px; /* Ajustado */
+    top: 1650px;
+    left: 850px;
+    border-radius: 50px; /* Bordes redondeados */
+  }
+  ion-input {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    font-size: 25px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Arial Black', sans-serif;
+  }
+  .custom-input1 {
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 0px;
+    width: 230px;
+  }
+  
+  .custom-input2 {
+    position: absolute;
+    margin-top: -320px;
+    margin-left: 0px;
+    width: 230px;
+  }
+  
+  .custom-input3 {
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 240px;
+    width: 380px;
+  }
+  
+  .custom-input4 {
+    position: absolute;
+    margin-top: -320px;
+    margin-left: 240px;
+    width: 380px;
+  }
+  
+  .custom-input5 {
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 0px;
+    width: 230px;
+  }
+  
+  .custom-input6 {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 0px;
+    width: 230px;
+  }
+  
+  .custom-input7 {
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 240px;
+    width: 380px;
+  }
+  
+  .custom-input8 {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 240px;
+    width: 380px;
+  }
+  .custom-input9 {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 0px;
+    width: 230px;
+  }
+  
+  .custom-input10 {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 0px;
+    width: 230px;
+  }
+  
+  .custom-input11 {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 240px;
+    width: 380px;
+  }
+  
+  .custom-input12 {
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 240px;
+    width: 380px;
+  }
+  
+  .custom-input13 {
+    position: absolute;
+    margin-top: 470px;
+    margin-left: 0px;
+    width: 230px;
+  }
+  
+  .custom-input14 {
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 0px;
+    width: 230px;
+  }
+  
+  .custom-input15 {
+    position: absolute;
+    margin-top: 470px;
+    margin-left: 240px;
+    width: 380px;
+  }
+  
+  .custom-input16 {
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 240px;
+    width: 380px;
+  }
+  .custom-buttonbus
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    top: 1800px;
+    left: 600px;
+  } 
+  .custom-buttonbus2
+  {
+    position: absolute; /* Asegura que no se muevan con el margen */
+    width: 400px; /* Ancho aumentado */
+    height: 80px; /* Alto aumentado */
+    font-size: 30px; /* Tamaño de fuente aumentado */
+    margin: 20px; /* Margen aumentado */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 1035px;
+    margin-left: 1030px;
+  } 
+  .custom-buttonregis {
+    position: absolute;
+    background-color: #1900ff;
+    color: white;
+    width: 400px; /* Aumentado */
+    height: 100px; /* Aumentado */
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px; /* Aumentado */
+    margin: 20px; /* Ajustado */
+    top: 1450px;
+    left: 490px;
+    border-radius: 50px; /* Bordes redondeados */
+  }

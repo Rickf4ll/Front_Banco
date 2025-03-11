@@ -1,0 +1,94 @@
+/* Fondo */
+.background-container {
+  position: fixed;
+  top: 13%;
+  left: 8%;
+  width: 85%;
+  height: 80%;
+  background-image: url('../../assets/icon/logo_banco_de_leche.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+}
+.custom-text{
+    font-family: Arial black;
+    font-size: 50px;
+}
+/* Estilos generales para el formulario */
+form {
+    
+    padding: 20px; /* Agrega espacio interno para mejor apariencia */
+    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar efecto de elevación */
+    font-family: Arial, sans-serif; /* Fuente estándar para mayor legibilidad */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido es muy grande */
+}
+
+
+
+/* Organización de las filas */
+.row {
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+     /* Permite que los elementos se ajusten en pantallas pequeñas */
+    margin-bottom: 15px; /* Espaciado entre filas */
+    width: 1440px;
+}
+
+/* Columnas dentro de cada fila */
+.col {
+    flex: 1; /* Permite que las columnas se ajusten proporcionalmente */
+    min-width: 200px; /* Evita que sean demasiado pequeñas en pantallas pequeñas */
+    margin: 20px; /* Espacio entre columnas */
+}
+
+
+    /* Aumentar tamaño del texto en los radio buttons */
+    input[type="radio"] {
+        transform: scale(0.8); /* Aumenta el tamaño del radio button */
+        margin-right: 10px;
+      }
+  
+      /* Ajuste del texto junto a los radio buttons */
+      .radio-label {
+        font-size: 40px;
+        vertical-align: middle;
+      }
+
+/* Estilos generales para los botones */
+button {
+    display: block; /* Asegura que ocupen todo el ancho disponible */
+    width: 400px; /* Botones de ancho completo */
+    height: 100px;
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Elimina los bordes */
+    background: #007BFF; /* Color azul para destacar */
+    color: white; /* Texto en color blanco */
+    font-size: 50px; /* Tamaño de fuente adecuado */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+
+}
+/* Efecto hover para mejorar la interacción */
+button:hover {
+    background: #0056b3; /* Color más oscuro al pasar el cursor */
+}
+
+label {
+  font-size: 40px; /* Aumento del tamaño del texto */
+font-family: Arial black;
+}
+
+input {
+  font-size: 30px; /* Tamaño del texto en los inputs */
+  height: 100px; /* Aumento del tamaño */
+  width: 100%; /* Ajusta el tamaño al 100% del contenedor */
+}
+
+button {
+  font-size: 30px;
+ font-family: Arial black; 
+  height: 100px;
+  width: 100%;
+}

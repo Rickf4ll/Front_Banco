@@ -1,0 +1,319 @@
+/* Fondo */
+.background-container {
+  position: fixed;
+  top: 13%;
+  left: 8%;
+  width: 85%;
+  height: 80%;
+  background-image: url('../../assets/icon/logo_banco_de_leche.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* Título principal */
+.center-content {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 8%;
+  text-align: left;
+  font-size: 70px; /* Aumentado */
+  font-family: 'Arial Black', sans-serif;
+  margin-top: 20px;
+}
+
+/* Fecha */
+.fecha-container {
+  position: absolute;
+  margin-top: -140px;
+  margin-left: 1000px;
+}
+
+.custom-date-field {
+  width: 400px; /* Aumentado */
+  height: 150px;
+  font-size: 30px; /* Aumentado */
+
+}
+
+.custom-date-input {
+  font-size: 200px; /* Aumentado */
+  height: 300px; /* Aumentado */
+  width: 1000px; /* Aumentado */
+  padding: 40px; /* Aumentado */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Campos de texto redondeados */
+mat-form-field {
+  border-radius: 50px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+/* N° de Cuna */
+.cuna-title {
+  font-size: 50px; /* Aumentado */
+  margin-top: 150px;
+  margin-left: 300px;
+}
+
+.custom-form {
+  position: absolute;
+  top: 300px;
+  left: 650px;
+  width: 600px; /* Aumentado */
+  font-size: 50px; /* Aumentado */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Llamada de teléfono */
+.llamada-title {
+  font-size: 50px; /* Aumentado */
+  margin-top: 110px;
+  margin-left: 30px;
+}
+
+.radio-container {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  top: 445px;
+  left: 650px;
+  mat-radio-button {
+    transform: scale(3); /* Aumentado */
+    margin-right: 200px; /* Aumentado */
+  }
+}
+/* Peso del día anterior */
+.peso-title {
+  font-size: 50px; /* Aumentado */
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.custom-form1 {
+  position: absolute;
+  top: 600px;
+  left: 690px;
+  width: 600px; /* Aumentado */
+  font-size: 60px; /* Aumentado */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Peso Actual */
+.actual-title {
+  font-size: 50px; /* Aumentado */
+  margin-top: 110px;
+  margin-left: 250px;
+}
+
+.custom-form2 {
+  position: absolute;
+  top: 890px;
+  left: 140px;
+  width: 580px; /* Aumentado */
+  font-size: 50px; /* Aumentado */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Delta Peso */
+.delta-title {
+  position: absolute;
+  font-size: 50px; /* Aumentado */
+  margin-top:   -70px;
+  margin-left: 930px;
+}
+
+.custom-form3 {
+  position: absolute;
+  top: 890px;
+  left: 800px;
+  width: 580px; /* Aumentado */
+  font-size: 50px; /* Aumentado */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Requerimiento del día */
+.requerimiento-title {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  margin-top: 130px;
+  margin-left: 30px;
+}
+
+/* Nro° de tomas */
+.tomas-title {
+  position:absolute;
+  font-size: 40px; /* Aumentado */
+  margin-top: 270px;
+  margin-left: 80px;
+}
+
+.custom-form4 {
+  position: absolute;
+  top: 1190px;
+  left: 100px;
+  width: 300px; /* Aumentado */
+  font-size: 80px; /* Aumentado */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Cantidad por toma */
+.cantidad-title {
+  position: absolute;
+  font-size: 45px; /* Aumentado */
+  margin-top: 270px;
+  margin-left: 550px;
+}
+
+.custom-form5 {
+  position: absolute;
+  top: 1190px;
+  left: 550px;
+  width: 300px; /* Aumentado */
+  font-size: 80px; /* Aumentado */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Tipo de leche */
+.tipo-title {
+  font-size: 40px; /* Aumentado */
+  margin-top: 270px;
+  margin-left: 1100px;
+}
+
+.custom-form6 {
+  position: absolute;
+  top: 1190px;
+  left: 1010px;
+  width: 400px; /* Aumentado */
+  font-size: 80px; /* Aumentado */
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Contenido Energético */
+.contenido-title {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  margin-top: 170px;
+  margin-left: 50px;
+}
+
+.cmbx-selection {
+  position: absolute;
+  opacity: 0.75;
+  font-size: 80px; /* Aumentado */
+  width: 40%; /* Aumentado */
+  margin-left: 100px;
+  margin-top: 280px;
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Vía de Administración */
+.via-title {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  margin-top: 160px;
+  margin-left: 780px;
+}
+
+.cmbx-selection1 {
+  position: absolute;
+  opacity: 0.75;
+  font-size: 80px; /* Aumentado */
+  width: 40%; /* Aumentado */
+  margin-top: 280px;
+  margin-left: 800px;
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+/* Calostro Terapia */
+.terapia-title {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  margin-top: 450px;
+  margin-left: 160px;
+}
+
+.radio-container2 {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  top: 1600px;
+  left: 800px;
+  mat-radio-button {
+    transform: scale(3); /* Aumentado */
+    margin-right: 200px; /* Aumentado */
+  }
+}
+
+/* Área */
+.area-title {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  margin-top: 700px;
+  margin-left: 380px;
+}
+
+.cmbx-selection2 {
+  position: absolute;
+  opacity: 0.75;
+  font-size: 80px; /* Aumentado */
+  margin-left: 580px;
+  margin-top: 680px;
+  border-radius: 50px; /* Bordes redondeados */
+  height: 120px;
+}
+
+.size-cmbx {
+  width: 700px; /* Ajustado */
+}
+
+/* NPO */
+.npo-title {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  margin-top: 580px;
+  margin-left: 470px;
+}
+
+.radio-container1 {
+  position: absolute;
+  font-size: 60px; /* Aumentado */
+  top: 1730px;
+  left: 790px;
+  mat-radio-button {
+    transform: scale(3); /* Aumentado */
+    margin-right: 200px; /* Aumentado */
+  }
+}
+
+/* Botones */
+.custom-button {
+  position: absolute;
+  background-color: #1900ff;
+  color: white;
+  width: 500px; /* Aumentado */
+  height: 150px; /* Aumentado */
+  font-family: 'Arial Black', sans-serif;
+  font-size: 50px; /* Aumentado */
+  margin: 20px; /* Ajustado */
+  margin-top: 900px;
+  left: 790px;
+  border-radius: 50px; /* Bordes redondeados */
+}
+
+.custom-button1 {
+  position: absolute;
+  background-color: #ff0000;
+  color: white;
+  width: 500px; /* Aumentado */
+  height: 150px; /* Aumentado */
+  font-family: 'Arial Black', sans-serif;
+  font-size: 50px; /* Aumentado */
+  margin: 20px; /* Ajustado */
+  margin-top: 900px;
+  left: 90px;
+  border-radius: 50px; /* Bordes redondeados */
+}

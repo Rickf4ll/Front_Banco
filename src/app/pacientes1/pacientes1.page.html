@@ -1,0 +1,133 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="custom-text">Pacientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Fondo -->
+  <div class="background-container"></div>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <div>
+      <ion-title class="custom-text">Pacientes</ion-title>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Tarjetas que NO se mueven -->
+  <div>
+    <mat-card class="custom-card" appearance="outlined">
+      <mat-card-content>NRO DE CUNA</mat-card-content>
+    </mat-card>
+    <mat-card class="custom-card1" appearance="outlined">
+      <mat-card-content>Area</mat-card-content>
+    </mat-card>
+    <mat-card class="custom-card2" appearance="outlined">
+      <mat-card-content>Pase de visita</mat-card-content>
+    </mat-card>
+    <mat-card class="custom-card3" appearance="outlined">
+      <mat-card-content>Dispensacion</mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Contenedor para el contenido que se moverá 300px hacia abajo -->
+  <div class="content-container">
+    <!-- Tarjetas adicionales -->
+    <mat-card class="custom-card4" appearance="outlined">
+      <mat-card-content>UCI</mat-card-content>
+    </mat-card>
+
+    <!-- Botones -->
+    <div>
+      <ion-button class="custom-button" [routerLink]="['/pase-de-visita']" color="fff700"> AGREGAR </ion-button>
+    </div>
+    <div>
+      <ion-button class="custom-button1" [routerLink]="['/dispensacion']" color="ffff">DISPENSACION</ion-button>
+    </div>
+    <div>
+      <ion-button class="custom-button3" [routerLink]="['/pase-de-visita']" color="ffff">AGREGAR</ion-button>
+    </div>
+    <div>
+      <ion-button class="custom-button4" [routerLink]="['/dispensacion' ]" color="ffff">DISPENSACION</ion-button>
+    </div>
+
+  <!-- Sección Jurídico -->
+<div class="seccion-movible">
+  <mat-card class="custom-cardJuridoco" appearance="outlined">
+    <mat-card-content>Quirurgico</mat-card-content>
+  </mat-card>
+  <div>
+    <ion-button class="custom-button-juridico" [routerLink]="['/pase-de-visita']" color="fff700"> AGREGAR </ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button1-juridico" [routerLink]="['/dispensacion']" color="ffffff">DISPENSACION</ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button3-juridico" [routerLink]="['/pase-de-visita']" color="ffffff"> AGREGAR </ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button4-juridico" [routerLink]="['/dispensacion']" color="ffffff">DISPENSACION</ion-button>
+  </div>
+
+<!-- Sección Engorde -->
+<div class="seccion-movible">
+  <mat-card class="custom-cardEngorde" appearance="outlined">
+    <mat-card-content>Engorde</mat-card-content>
+  </mat-card>
+  <div>
+    <ion-button class="custom-button-engorde" [routerLink]="['/pase-de-visita']" color="fff"> AGREGAR </ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button1-engorde" [routerLink]="['/dispensacion']" color="fff">DISPENSACION</ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button3-engorde" [routerLink]="['/pase-de-visita']" color="fff"> AGREGAR </ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button4-engorde" [routerLink]="['/dispensacion']" color="fff"> DISPENSACION </ion-button>
+  </div>
+
+<!-- Sección Intermedio -->
+<div class="seccion-movible">
+  <mat-card class="custom-cardIntermedio" appearance="outlined">
+    <mat-card-content>Intermedio</mat-card-content>
+  </mat-card>
+  <div>
+    <ion-button class="custom-button-intermedio" [routerLink]="['/pase-de-visita']" color="fff"> AGREGAR </ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button1-intermedio" [routerLink]="['/dispensacion']" color="fff">DISPENSACION</ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button3-intermedio" [routerLink]="['/pase-de-visita']" color="fff"> AGREGAR </ion-button>
+  </div>
+  <div>
+    <ion-button class="custom-button4-intermedio" [routerLink]="['/dispensacion']" color="fff"> DISPENSACION </ion-button>
+  </div>
+
+  <!-- Dentro del content-container, después de los botones -->
+
+<!-- Inputs para UCI -->
+<ion-input class="custom-input1" placeholder="Input 1"></ion-input>
+<ion-input class="custom-input2" placeholder="Input 2"></ion-input>
+<ion-input class="custom-input3" placeholder="Input 3"></ion-input>
+<ion-input class="custom-input4" placeholder="Input 4"></ion-input>
+
+<!-- Inputs adicionales -->
+<ion-input class="custom-input5" placeholder="Input 5"></ion-input>
+<ion-input class="custom-input6" placeholder="Input 6"></ion-input>
+<ion-input class="custom-input7" placeholder="Input 7"></ion-input>
+<ion-input class="custom-input8" placeholder="Input 8"></ion-input>
+<!-- Inputs para UCI -->
+<ion-input class="custom-input9" placeholder="Input 9"></ion-input>
+<ion-input class="custom-input10" placeholder="Input 10"></ion-input>
+<ion-input class="custom-input11" placeholder="Input 11"></ion-input>
+<ion-input class="custom-input12" placeholder="Input 12"></ion-input>
+
+<!-- Inputs adicionales -->
+<ion-input class="custom-input13" placeholder="Input 13"></ion-input>
+<ion-input class="custom-input14" placeholder="Input 14"></ion-input>
+<ion-input class="custom-input15" placeholder="Input 15"></ion-input>
+<ion-input class="custom-input16" placeholder="Input 16"></ion-input>
