@@ -1,0 +1,138 @@
+/* 📌 Permitir desplazamiento en toda la página */
+
+
+/* 📌 Contenedor principal para que ocupe toda la altura */
+
+
+/* 📌 Fondo de la página con transparencia */
+.background-container {
+    position: fixed;
+    top: 13%;
+    left: 8%;
+    width: 85%;
+    height: 80%;
+    background-image: url('../../assets/fondo.png'); /* Imagen de fondo */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2; /* Ajuste de transparencia */
+    z-index: -1;
+}
+
+body{
+    background-image: url('../../assets/fondo.png');
+    overflow-y: auto;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 📌 Contenedor del formulario */
+
+h2 {
+    text-align: center;
+    color: teal;
+    font-weight: bold;
+}
+/* 📌 Diseño del formulario */
+form {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 📌 Campos de entrada */
+input, select, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Evita que el padding afecte el tamaño */
+}
+
+/* 📌 Botones */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #009688; /* Color principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+/* 📌 Contenedor de botones de acción */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 📌 Botón de regreso */
+.back-btn {
+    background-color: #757575;
+}
+
+.back-btn:hover {
+    background-color: #616161;
+}
+
+/* 📌 Botón de registro */
+.register-btn {
+    background-color: #3f51b5;
+}
+
+.register-btn:hover {
+    background-color: #303f9f;
+}
+
+/* 📌 Diseño de filas y columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.col {
+    flex: 1;
+    min-width: 250px; /* Evita que las columnas sean demasiado pequeñas */
+    padding: 10px;
+}
+
+/* 📌 Contenedor de selección de género */
+.gender-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 📌 Contenedor de enfermedades y botón de agregar */
+.input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.btn-guardar:hover {
+    background-color: #303f9f;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -21,11 +22,21 @@ interface Contenido { value: string; viewValue: string; }
 interface Via { value: string; viewValue: string; }
 interface Area { value: string; viewValue: string; }
 
+=======
+import { ChangeDetectionStrategy,Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+>>>>>>> 3af2b3d7d3a1133a472ec90df24c55292df706d5
 @Component({
   selector: 'app-pase-de-visita',
   templateUrl: './pase-de-visita.page.html',
   styleUrls: ['./pase-de-visita.page.scss'],
   standalone: true,
+<<<<<<< HEAD
   providers: [
     { provide: DateAdapter, useClass: MomentDateAdapter },
     { provide: MAT_DATE_FORMATS, useValue: MY_DATE_FORMATS }
@@ -90,4 +101,17 @@ export class PaseDeVisitaPage implements OnInit {
       alert('Complete todos los campos');
     }
   }
+=======
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
+    MatCardModule,MatToolbarModule,MatIconModule],
+  
+})
+export class PaseDeVisitaPage implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+>>>>>>> 3af2b3d7d3a1133a472ec90df24c55292df706d5
 }

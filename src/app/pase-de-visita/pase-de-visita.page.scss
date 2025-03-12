@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Fondo */
 .background-container {
   position: fixed;
@@ -317,3 +318,26 @@ mat-form-field {
   left: 90px;
   border-radius: 50px; /* Bordes redondeados */
 }
+=======
+/* filepath: /c:/Users/Ricardo/Front_Banco/src/app/pase-de-visita/pase-de-visita.page.scss */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+    text-align: center;
+    font-size: 80px;
+  }
+  .custom-title {
+    font-size: 50px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial Black', sans-serif; /* Cambia el tipo de letra según sea necesario */
+  }
+  .fecha-title {
+    font-size: 30px; /* Cambia el tamaño de la fuente según sea necesario */
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de letra según sea necesario */
+    text-align: center; /* Centra el texto */
+    margin-top: 80px; /* Ajusta el margen superior según sea necesario */
+    margin-left: -400px;
+    
+  }
+>>>>>>> 3af2b3d7d3a1133a472ec90df24c55292df706d5

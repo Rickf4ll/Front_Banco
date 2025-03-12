@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="registro-madre.page.scss">
+</head>
+
+<body>
+    <form>
+        <div class="row">
+            <div class="col">
+                <h2>Buscar Historia Clinica</h2>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar por DNI de la madre O NRO DE CUNA">
+                </div>
+            </div>
+            <div class="col">
+                <button class="search-btn">BUSCAR</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+            <div class="col">
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="text" id="fecha-nacimiento" placeholder="DD/MM/AAAA">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="apellido-paterno">Apellido Paterno:</label>
+                <input type="text" id="apellido-paterno">
+            </div>
+            <div class="col">
+                <label for="genero">Género:</label>
+                <div class="gender-container">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="apellido-materno">Apellido Materno:</label>
+                <input type="text" id="apellido-materno">
+            </div>
+            <div class="col">
+                <label for="dni-madre">DNI DE LA MADRE:</label>
+                <input type="text" id="dni-madre">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="cuna-registrada">Cuna Registrada:</label>
+                <input type="text" id="cuna-registrada">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="back-btn">REGRESAR</button>
+            </div>
+            <div class="col">
+                <button class="view-btn">VER HISTORIA</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
