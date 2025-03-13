@@ -1,0 +1,47 @@
+<ion-content class="ion-padding">
+  <div class="contenedor">
+    <h1 class="titulo">Registro de Leche Pasteurizada</h1>
+    <div class="imagen-container">
+      <img src="assets/imabanco.jpg" alt="Imagen centrada" class="imagen-centrada"/>
+
+      <div class="contenido">
+
+        <ion-label class="texselec" >Seleccione el tipo de leche:</ion-label>
+        <ion-select class="opselec" placeholder="Tipos de leche">
+          <ion-select-option value="Transición">Transición</ion-select-option>
+          <ion-select-option value="Madura">Madura</ion-select-option>
+          <ion-select-option value="Calostro">Calostro</ion-select-option>
+        </ion-select>
+
+        <ion-label class="texcode"  >Código de leche:</ion-label>
+        <ion-input class="impcode" type="text" placeholder="Ingresar código"></ion-input>
+      
+        <ion-label class="texcant" >Cantidad de leche:</ion-label>
+        <ion-input class="impcant" type="number" placeholder="en ml"></ion-input>
+
+        <ion-label class="texkal" >Ingresar la Kcal:</ion-label>
+        <ion-input class="impkal" type="number" placeholder="kilocalorias"></ion-input>
+      
+        <ion-label class="texcrem" >%Crema:</ion-label>
+        <ion-input class="impcrem" type="number" placeholder="%C"></ion-input>
+      
+
+        <ion-label class="texgra" >%Grasa:</ion-label>
+        <ion-input class="impgra" type="number" placeholder="%G"></ion-input>
+      
+        <ion-label class="texador" >áDornix:</ion-label>
+        <ion-input class="impador" type="text" placeholder="á"></ion-input>
+      
+      </div>
+              
+  </div>
+    
+  <ion-button expand="block" color="rojo" size="large" class="boton-regresar" (click)="regresar()">
+    Regresar
+  </ion-button>
+  <ion-button expand="block" color="azul" size="large" class="boton-registrar" (click)="registrar()">
+    Registrar
+  </ion-button>
+    
+  </div>
+</ion-content>

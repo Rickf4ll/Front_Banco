@@ -1,0 +1,222 @@
+/* Estilos para el fondo del ion-content */
+ion-content {
+  --background: #f7f7f7 !important; /* Define el color de fondo */
+}
+
+/* Contenedor principal */
+.contenedor {
+  width: 1440px;
+  max-width: 100%;
+  height: 100vh; /* Altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5%;
+  text-align: center;
+  position: relative;
+  background-color: transparent; /* Color de fondo */
+}
+
+.titulo {
+  font-size: 80px; /* Ajuste de tamaño de fuente */
+  font-weight: bold;
+  margin-top: 19px;
+  color: black;
+  position: center;
+  font-weight: 700;
+}
+
+.imagen-container {
+  position: relative;
+  width: 90%;
+  max-width: 1250px;
+}
+
+.imagen-centrada {
+  width: 100%;
+  height: auto;
+  opacity: 0.3; /* Para mejor visibilidad de botones */
+}
+
+.contenido{
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0); /* Centrar horizontalmente */
+  width: 100%; /* Ancho responsivo */
+  max-width: 1400px; /* Igual al contenedor de la imagen */
+  height: 100%;
+  max-height: 1600px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 50px;
+}
+
+.texselec {
+  position: absolute;
+  font-size: 4rem;
+  width: 650px;
+  right: 450px;
+  bottom: 1350px;
+  color: black;
+  font-weight: 700;
+  text-align: left;
+}
+.opselec {
+  position: absolute;
+  width: 400px;
+  left: 700px;
+  bottom: 1400px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+
+.texcode {
+  font-size: 4rem;
+  position: absolute;
+  right: 450px;
+  bottom: 1100px;
+  color: black;
+  width: 650px;
+  text-align: left; 
+  font-weight: 700;
+}
+.impcode {
+  position: absolute;
+  width: 400px;
+  left: 700px;
+  bottom: 1100px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+
+.texcant {
+  font-size: 4rem;
+  position: absolute;
+  right: 450px;
+  bottom: 900px;
+  color: black;
+  width: 650px;
+  text-align: left; 
+  font-weight: 700;
+}
+.impcant {
+  position: absolute;
+  width: 400px;
+  left: 700px;
+  bottom: 900px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+  
+.texkal {
+  font-size: 4rem;
+  position: absolute;
+  right: 450px;
+  bottom: 700px;
+  color: black;
+  width: 650px;
+  text-align: left; 
+  font-weight: 700;
+}
+.impkal {
+  position: absolute;
+  width: 400px;
+  left: 700px;
+  bottom: 700px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+
+.texcrem {
+  font-size: 4rem;
+  position: absolute;
+  right: 450px;
+  bottom: 500px;
+  color: black;
+  width: 650px;
+  text-align: left; 
+  font-weight: 700;
+}
+.impcrem {
+  position: absolute;
+  width: 400px;
+  left: 700px;
+  bottom: 500px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+.texgra {
+  font-size: 4rem;
+  position: absolute;
+  right: 450px;
+  bottom: 300px;
+  color: black;
+  width: 650px;
+  text-align: left; 
+  font-weight: 700;
+}
+.impgra {
+  position: absolute;
+  width: 400px;
+  left: 700px;
+  bottom: 300px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+.texador {
+  font-size: 4rem;
+  position: absolute;
+  right: 450px;
+  bottom: 100px;
+  color: black;
+  width: 650px;
+  text-align: left; 
+  font-weight: 700;
+}
+.impador {
+  position: absolute;
+  width: 400px;
+  left: 700px;
+  bottom: 100px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+.boton-regresar {
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+
+.boton-registrar {
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}

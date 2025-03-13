@@ -1,0 +1,177 @@
+ion-content {
+  --background: #f7f7f7 !important;
+}
+
+.contenedor {
+  width: 1440px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5%;
+  text-align: center;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.titulo {
+  font-size: 90px; /* Ajuste de tamaño de fuente */
+  font-weight: bold;
+  margin-top: 20px;
+  color: black;
+  position: relative;
+  left: -150px;
+}
+
+.imagen-container {
+  position: relative;
+  width: 90%;
+  max-width: 1440px;
+}
+
+.imagen-centrada {
+  width: 100%;
+  height: auto;
+  opacity: 0.3; /* Para mejor visibilidad de botones */
+}
+
+.tablas-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  max-width: 1430px;
+}
+
+.tipo-leche-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.tipo-leche-titulo {
+  font-size: 4rem;
+  background-color:#ff5733;
+  margin-bottom: 15px;
+}
+
+.leches-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.leche-tipo {
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 30px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.tipo-calorico-titulo {
+  font-size: 3rem;
+  background-color: green;
+  margin-bottom: 10px;
+  position: center;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 2px solid #4d998a;
+  padding: 15px;
+  text-align: left;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+th {
+  background-color: #4d998a;
+  color: white;
+  font-size: 19px;
+}
+
+.boton-regresar {
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+
+
+/* Media queries para responsividad */
+@media (max-width: 1024px) {
+  .contenedor {
+    height: auto;
+    padding: 15px;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .leches-container {
+    width: 100%;
+  }
+
+  .leche-tipo {
+    flex: 1 1 100%;
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .tipo-calorico {
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .boton-regresar {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .leches-container {
+    width: 100%;
+
+    .leche-tipo {
+      flex: 1 1 100%;
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .tipo-calorico {
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
+  .boton-regresar {
+    font-size: 1.5rem;
+  }
+}

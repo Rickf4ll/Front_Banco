@@ -1,0 +1,35 @@
+<ion-content>
+  <div class="contenedor">
+    <!-- Título centrado en la parte superior -->
+    <h1 class="titulo">Área de almacén</h1>
+
+    <!-- Contenedor de la imagen con los botones superpuestos -->
+    <div class="imagen-container">
+      <img src="assets/imabanco.jpg" alt="Imagen centrada" class="imagen-centrada" />
+
+      <!-- Contenedor de los botones centrados sobre la imagen -->
+      <div class="botones-container">
+        <ion-button expand="block" class="botonrp" color="turquesa" (click)="registropasteurizado()">
+          REGISTRO DE LECHE PASTEURIZADA
+        </ion-button>
+      
+        <ion-button expand="block" class="botonlc" color="turquesa" (click)="registroautologa()">
+          INGRESO DE LECHE CRUDA
+        </ion-button>
+      
+        <ion-button expand="block" class="botonld" color="turquesa" (click)="lechesdisponibles()">
+          LECHES DISPONIBLES
+        </ion-button>
+      
+        <ion-button expand="block" class="botona" color="turquesa" (click)="alertas()">
+          ALERTAS
+        </ion-button>    
+      </div>
+    </div>
+
+    <!-- Botón regresar en la parte inferior -->
+    <ion-button expand="block"  color="rojo" size="large" class="boton-regresar" (click)="regresar()">
+      Regresar
+    </ion-button>
+  </div>
+</ion-content>

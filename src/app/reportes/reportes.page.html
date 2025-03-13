@@ -1,0 +1,57 @@
+<ion-content class="ion-padding">
+  <div class="contenedor">
+    <h1 class="titulo">Reporte general</h1>
+    <div class="imagen-container">
+      <img src="assets/imabanco.jpg" alt="Imagen centrada" class="imagen-centrada"/>
+
+      <div class="contenido">
+        <ion-select class="selecbebe" placeholder="Tipos de bebe" (ionChange)="onSelectChange($event, 'tipoBebe')">
+          <ion-select-option value="Macrosomico">Macrosomico</ion-select-option>
+          <ion-select-option value="Adecuado">Adecuado</ion-select-option>
+          <ion-select-option value="Bajo">Bajo</ion-select-option>
+          <ion-select-option value="Muy Bajo">Muy Bajo</ion-select-option>
+          <ion-select-option value="Extremadamente bajo">Extremadamente bajo</ion-select-option>
+        </ion-select>
+
+        <ion-select class="selectem" placeholder="Por tiempo" (ionChange)="onSelectChange($event, 'tiempo')">
+          <ion-select-option value="Dia">Día</ion-select-option>
+          <ion-select-option value="Semana">Semana</ion-select-option>
+          <ion-select-option value="Mes">Mes</ion-select-option>
+          <ion-select-option value="Trimestre">Trimestre</ion-select-option>
+          <ion-select-option value="Año">Año</ion-select-option>
+        </ion-select>
+
+        <ion-select class="selecle" placeholder="Tipo de leche" (ionChange)="onSelectChange($event, 'tipoLeche')">
+          <ion-select-option value="Calostro">Calostro</ion-select-option>
+          <ion-select-option value="Transición">Transición</ion-select-option>
+          <ion-select-option value="Madura">Madura</ion-select-option>
+          <ion-select-option value="Autologa">Autóloga</ion-select-option>
+        </ion-select>
+      </div>
+
+      <!-- Contenedores para estadísticas -->
+      <div *ngIf="estadisticasTipoBebe" class="estadistica-container">
+        <h2>{{ estadisticasTipoBebe.titulo }}</h2>
+        <p>Datos: {{ estadisticasTipoBebe.data.join(', ') }}</p>
+        <!-- Aquí puedes agregar un gráfico usando NgApexchartsModule -->
+      </div>
+
+      <div *ngIf="estadisticasTiempo" class="estadistica-container">
+        <h2>{{ estadisticasTiempo.titulo }}</h2>
+        <p>Datos: {{ estadisticasTiempo.data.join(', ') }}</p>
+      </div>
+
+      <div *ngIf="estadisticasTipoLeche" class="estadistica-container">
+        <h2>{{ estadisticasTipoLeche.titulo }}</h2>
+        <p>Datos: {{ estadisticasTipoLeche.data.join(', ') }}</p>
+      </div>
+    </div>
+
+    <ion-button expand="block" color="rojo" size="large" class="boton-regresar" (click)="regresar()">
+      Regresar
+    </ion-button>
+    <ion-button expand="block" color="azul" size="large" class="boton-limpiar" (click)="limpiar()">
+      Limpiar
+    </ion-button>
+  </div>
+</ion-content>

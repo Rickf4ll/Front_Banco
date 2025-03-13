@@ -1,0 +1,118 @@
+/* Estilos para el fondo del ion-content */
+ion-content {
+  --background: #f7f7f7 !important; /* Define el color de fondo */
+}
+
+/* Contenedor principal */
+.contenedor {
+  width: 1440px;
+  max-width: 100%;
+  height: 100vh; /* Altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5%;
+  text-align: center;
+  position: relative;
+  background-color: #f5f5f5; /* Color de fondo */
+}
+
+/* Título */
+.titulo {
+  font-size: 100px; /* Ajuste de tamaño de fuente */
+  font-weight: bold;
+  margin-top: 20px;
+  color: black;
+  position: relative;
+  left: -150px; 
+}
+
+/* Ajusta la imagen y los botones */
+.imagen-container {
+  position: relative;
+  width: 90%;
+  max-width: 1250px;
+}
+
+.imagen-centrada {
+  width: 100%;
+  height: auto;
+  opacity: 0.3; /* Para mejor visibilidad de botones */
+}
+
+/* Contenedor de los botones */
+.botones-container {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  max-width: 1300px;
+  gap: 120px; /* Más espacio entre los botones */
+    
+}
+
+/* Botones ajustables al tamaño del texto */
+
+.botonrp, .botonlc, .botonld, .botona {
+  font-size:45px;
+  width: 100%; /* Los botones ocupan todo el ancho del contenedor */
+  border-radius: 25px;
+  height: 180px;
+}
+
+/* Botón regresar */
+.boton-regresar {
+  font-size: 2.5rem;
+  position: absolute; /* Posiciona el botón de forma absoluta */
+  bottom: 20px; /* Lo coloca en la parte inferior */
+  left: 40px; /* Lo mueve hacia la izquierda */
+}
+
+/* 📌 Media queries para responsividad */
+@media (max-width: 1024px) {
+  .contenedor {
+    height: auto;
+    padding: 15px;
+  }
+  
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .botones-container {
+    width: 90%;
+  }
+
+  .boton {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .botones-container {
+    width: 100%;
+  }
+
+  .boton {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    min-width: 180px;
+  }
+  
+  .boton-regresar {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    min-width: 160px;
+  }
+}

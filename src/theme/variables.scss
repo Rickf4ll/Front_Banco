@@ -1,2 +1,75 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root {
+    --ion-color-turquesa: #4d998a;
+    --ion-color-turquesa-rgb: 131, 210, 194;
+    --ion-color-turquesa-contrast: #ffffff;
+    --ion-color-turquesa-contrast-rgb: 255, 255, 255;
+    --ion-color-turquesa-shade: #74bfb1;
+    --ion-color-turquesa-tint: #92d9cc;
+  }
+  .ion-color-turquesa {
+    --ion-color-base: var(--ion-color-turquesa);
+    --ion-color-base-rgb: var(--ion-color-turquesa-rgb);
+    --ion-color-contrast: var(--ion-color-turquesa-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-turquesa-contrast-rgb);
+    --ion-color-shade: var(--ion-color-turquesa-shade);
+    --ion-color-tint: var(--ion-color-turquesa-tint);
+  }
+
+:root {
+    --ion-color-rojo: #8e1010; /* Rojo oscuro */
+    --ion-color-rojo-rgb: 142, 16, 16; /* RGB correcto */
+    --ion-color-rojo-contrast: #ffffff; /* Texto en blanco para contraste */
+    --ion-color-rojo-contrast-rgb: 255, 255, 255;
+    --ion-color-rojo-shade: #750d0d; /* Sombra más oscura */
+    --ion-color-rojo-tint: #a31b1b; /* Un poco más claro */
+}
+
+/* Definir la clase personalizada de color */
+.ion-color-rojo {
+    --ion-color-base: var(--ion-color-rojo);
+    --ion-color-base-rgb: var(--ion-color-rojo-rgb);
+    --ion-color-contrast: var(--ion-color-rojo-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-rojo-contrast-rgb);
+    --ion-color-shade: var(--ion-color-rojo-shade);
+    --ion-color-tint: var(--ion-color-rojo-tint);
+}
+
+:root {
+  --ion-color-azul: #104e8e; /* Azul oscuro */
+  --ion-color-azul-rgb: 16, 78, 142; /* RGB correcto */
+  --ion-color-azul-contrast: #ffffff; /* Texto en blanco para contraste */
+  --ion-color-azul-contrast-rgb: 255, 255, 255;
+  --ion-color-azul-shade: #0d4175; /* Sombra más oscura */
+  --ion-color-azul-tint: #1b65a3; /* Un poco más claro */
+}
+
+/* Definir la clase personalizada de color */
+.ion-color-azul {
+  --ion-color-base: var(--ion-color-azul);
+  --ion-color-base-rgb: var(--ion-color-azul-rgb);
+  --ion-color-contrast: var(--ion-color-azul-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-azul-contrast-rgb);
+  --ion-color-shade: var(--ion-color-azul-shade);
+  --ion-color-tint: var(--ion-color-azul-tint);
+}
+
+:root {
+  --ion-color-naranja: #ff9800; /* Naranja */
+  --ion-color-naranja-rgb: 255, 152, 0; /* RGB correcto */
+  --ion-color-naranja-contrast: #000000; /* Texto en negro para contraste */
+  --ion-color-naranja-contrast-rgb: 0, 0, 0;
+  --ion-color-naranja-shade: #e08900; /* Sombra más oscura */
+  --ion-color-naranja-tint: #ffab19; /* Un poco más claro */
+}
+
+/* Definir la clase personalizada de color */
+.ion-color-naranja {
+  --ion-color-base: var(--ion-color-naranja);
+  --ion-color-base-rgb: var(--ion-color-naranja-rgb);
+  --ion-color-contrast: var(--ion-color-naranja-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-naranja-contrast-rgb);
+  --ion-color-shade: var(--ion-color-naranja-shade);
+  --ion-color-tint: var(--ion-color-naranja-tint);
+}
